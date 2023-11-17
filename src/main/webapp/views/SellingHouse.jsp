@@ -1,6 +1,6 @@
 <%@ page import="com.api.web.practice.rental.model.Selling" language="java" contentType="text/html" %>
   <%@ page import="java.util.List" %>
-
+  
     <!doctype html>
     <html lang="en">
 
@@ -15,17 +15,20 @@
 
       <title>Hello, world!</title>
       <script src="https://kit.fontawesome.com/9d0c5215d1.js" crossorigin="anonymous"></script>
-      <style>
-       
-       
-      </style>
     </head>
 
     <body>
-      <h1 class="text-center py-5">Database</h1>
+        <!-- Check if the "message" attribute is present in the model -->
+       <h3>${message}</h3>
+      
+      <div class="container pt-5 d-flex justify-content-between">
+        <a href="/home" class="">Visit-Home-page</a>
+        <h1 class="text-center ">Database</h1>
+        <a href="/RentingHouse" class="">Visit-RentDatabase-page</a>
+      </div>
       <div class="container my-5">
-        <table class="table table-hover table-dark">
-          <thead>
+        <table class="table table-hover table-bordered ">
+          <thead class="thead-dark">
             <tr>
               <th scope="col">#</th>
               <th scope="col">Username</th>
@@ -65,22 +68,18 @@
                     <%= sel.getArea() %>
                   </td>
                   <td><a href="/edit/<%= sel.getId() %>"><i class="fas fa-pen-to-square"></i></a></td>
-
-
-                
                   <td>
-                    
-                     <a href="/delete/ <%= sel.getId()%>"><i style="color: red;" class="fas fa-trash"></i></a>
-                    </td>
+                    <a href="/delete/ <%= sel.getId()%>"><i style="color: red;" class="fas fa-trash"></i></a>
+                  </td>
                 </tr>
                 <% } } %>
-              
-               
+                
+
           </tbody>
         </table>
       </div>
       <!-- //Editing with script .. Expression logic is not working here -->
-    
+
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

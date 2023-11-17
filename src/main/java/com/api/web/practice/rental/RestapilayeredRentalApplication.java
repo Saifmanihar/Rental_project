@@ -8,7 +8,7 @@ public class RestapilayeredRentalApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestapilayeredRentalApplication.class, args);
-		System.out.println("Server Started :))");
+		System.out.println("Server Started for rental list :))");
 	}
 
 }

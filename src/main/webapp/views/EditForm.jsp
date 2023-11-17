@@ -14,9 +14,9 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<div class="container-fluid p-5">
+<div class="container p-5">
     <c:forEach var="edit" items="${SellingHouse}">
-        <form class="mr-auto py-5" method="post" action="/save">
+        <form class="mr-auto py-5" method="post" action="/EditForm">
           <input type="hidden" name="id"  value="${edit.id}">
             <div class="form-row">
                 <div class="form-group col-md-6">

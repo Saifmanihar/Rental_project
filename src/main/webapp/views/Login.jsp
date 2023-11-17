@@ -21,6 +21,7 @@
 
     .column {
         display: flex;
+        position: fixed;
     }
 
     .lb-name {
@@ -41,7 +42,7 @@
     .leftcolumn,
     .rightcolumn {
         flex-basis: 50%;
-
+        
     }
 
     .Name-input {
@@ -105,6 +106,7 @@
     .rightcolumn {
         overflow-y: auto;
         margin-left: 900px;
+      
     }
 
     .leftcolumn,
@@ -114,6 +116,7 @@
         margin-right: 150px;
         flex-shrink: 0;
         position: fixed;
+        margin-top: 3px;
     }
     .btn{
         height: 40px;
@@ -171,7 +174,7 @@
     }
     .redirect-page{
         position: absolute;
-        left: 1230px;
+        left: 1150px;
         top: 20px;
     }
 </style>
@@ -180,10 +183,10 @@
     <div class="section1">
         <div class="column">
             <div class="leftcolumn">
-                <img src="veg1.png" class="log-img1">
+                <img src="/images/img1.jpg" class="log-img1">
             </div>
             <div class="rightcolumn">
-                <p class="redirect-page">Don't have an account <a href="signin.htm">Sign In</a> </p>
+                <p class="redirect-page">Don't have an account <a href="Signin">Sign In</a> </p>
                <div class="sign-google">
                 <button class="btn-google" type="submit">G Sign in with Google</button>
                </div>
@@ -195,25 +198,31 @@
                     <div class="breaker1">
                         <hr> 
                     </div>
+                    <form action="Login" method="post">
                     <div class="field">
                        
-                        <label for="name" class="lb-name">Name</label>
-                        <input type="text" name="" autocomplete="on" class="Name-input">
+                        <label for="email" class="lb-name">Email</label>
+                        <input type="text" required name="email" autocomplete="on" class="Name-input">
                     </div>
                     
                 </div>
                
                 <div class="par-email">
-                    <label for="username" class="lb-name">Password</label>
-                    <input type="text" name="" autocomplete="off" placeholder="6+character" id="Name-input1">
+                    <label for="password" class="lb-name">Password</label>
+                    <input type="text" required name="password" autocomplete="off" placeholder="6+character" id="Name-input1">
                 </div>
+                <% if (request.getAttribute("error") != null && !request.getAttribute("error").toString().isEmpty()) { %>
+                    <p style="color: red;"><%= request.getAttribute("error") %></p>
+                <% } %>
                 <div class="par-email" id="par-condition">
-                    <input type="checkbox" name="" autocomplete="off" id="Name-input2">
+                    <input type="checkbox" required name="" autocomplete="off" id="Name-input2">
                     <label for="username" class="lb-name2">Creating an account mean's you're okay with our terms of <br>
                         <span class="sp-lb1"> Service, Privacy <span id="sp-lb2">and our default and</span> Notification
                             Setting </label> <br>
                             <button type="submit" class="btn">Sign In </button>
                 </div>
+                
+            </form>
                
             </div>
         </div>
