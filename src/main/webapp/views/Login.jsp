@@ -31,12 +31,12 @@
 
     .par-field {
         display: flex;
-        margin-top: 80px;
+        margin-top: 40px;
     }
 
     .field {
         margin-right: 20px;
-        margin-top: 200px;
+        margin-top: 100px;
     }
 
     .leftcolumn,
@@ -136,47 +136,17 @@
        background-color: coral;
       
     }
-    .breaker{
-        position: absolute;
-        margin-top: 150px;
-       width: 220px;
-       flex: none;
-    }
-    .sp1{
-        position: absolute;
-        left: 1125px;
-        top: 220px;
-    }
-    .breaker1{
-        position: absolute;
-        margin-top: 150px;
-        left: 1155px;
-        width: 220px;
-    }
-    .btn-google{
-        height: 35px;
-        border-radius: 10px;
-        border: none;
-        color: blue;
-        width: 30vw;
-        position: absolute;
-        top: 150px;
-        transition: box-shadow 0.5 ease;
-        box-shadow: none;
-        cursor: pointer;
-    }
     
-    .btn-google:hover{
-        box-shadow: 0 0 10px coral;
-       background-color: blue;
-       color: aliceblue;
-      
-    }
+
+    
+    
+   
     .redirect-page{
         position: absolute;
         left: 1150px;
         top: 20px;
     }
+   
 </style>
 
 <body>
@@ -187,22 +157,14 @@
             </div>
             <div class="rightcolumn">
                 <p class="redirect-page">Don't have an account <a href="Signin">Sign In</a> </p>
-               <div class="sign-google">
-                <button class="btn-google" type="submit">G Sign in with Google</button>
-               </div>
+            
                 <div class="par-field">
-                    <div class="breaker">
-                        <hr> 
-                    </div>
-                    <span class="sp1"> Or </span>
-                    <div class="breaker1">
-                        <hr> 
-                    </div>
+                    
                     <form action="Login" method="post">
                     <div class="field">
                        
                         <label for="email" class="lb-name">Email</label>
-                        <input type="text" required name="email" autocomplete="on" class="Name-input">
+                        <input type="text" placeholder="Email" required name="email" autocomplete="on" class="Name-input">
                     </div>
                     
                 </div>
@@ -215,10 +177,7 @@
                     <p style="color: red;"><%= request.getAttribute("error") %></p>
                 <% } %>
                 <div class="par-email" id="par-condition">
-                    <input type="checkbox" required name="" autocomplete="off" id="Name-input2">
-                    <label for="username" class="lb-name2">Creating an account mean's you're okay with our terms of <br>
-                        <span class="sp-lb1"> Service, Privacy <span id="sp-lb2">and our default and</span> Notification
-                            Setting </label> <br>
+               
                             <button type="submit" class="btn">Sign In </button>
                 </div>
                 

@@ -44,10 +44,15 @@
                 <label for="area">Area</label>
                 <input type="text" class="form-control" name="area" value="${edit.area}" placeholder="Area of house">
             </div>
-            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="submit" class="btn btn-primary" onclick="displaymessage()">Save</button>
         </form>
     </c:forEach>
 </div>
+<script type="text/javascript">
+    function displaymessage(){
+      alert("Successfully submitted your data");
+    }
+  </script>
 <!-- Additional scripts here... -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

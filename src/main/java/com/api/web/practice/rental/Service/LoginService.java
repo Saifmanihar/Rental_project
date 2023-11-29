@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import com.api.web.practice.rental.model.Signin;
 import com.api.web.practice.rental.respository.LoginRepo;
 
-
 @Service
 
 public class LoginService {

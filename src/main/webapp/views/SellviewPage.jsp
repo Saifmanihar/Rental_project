@@ -14,51 +14,8 @@
                 crossorigin="anonymous">
 
             <title>Hello, world!</title>
-            <script type="text/javascript">
-                function Search() {
-                    var query = document.getElementById('SearchInput').value;
-                    var url = 'http://localhost:8082/search/' + query;
-
-                    if (query == "") {
-                        $("#SearchResult").hide();
-                    }
-                    else {
-                        // Make the GET request to the server
-                        fetch(url)
-                            .then(response => response.json())
-                            .then(data => {
-                                // Process the search results
-                                console.log(data);
-
-                                // Assuming #SearchResult is a container element with the list-group class
-                                let listGroup = $("#SearchResult");
-
-                                // Clear any existing content in the container
-                                listGroup.empty();
-
-                                data.forEach(selling => {
-                                    // Create a new list item for each result
-                                    let listItem = $("<a>", {
-                                        href: "/Sellview/${selling.address}",
-                                        class: "list-group-item list-group-action",
-                                        text: selling.address
-                                    });
-
-                                    // Append the new list item to the container
-                                    listGroup.append(listItem);
-                                });
-
-                                // Show the container
-                                listGroup.show();
-                            })
-                            .catch(error => {
-                                console.error('Error fetching data:', error);
-                            });
-
-                    };
-                }
-            </script>
-
+         
+            
             <style>
                 #box {
                     position: relative;
@@ -74,19 +31,17 @@
             </style>
         </head>
 
-        <body class="bg-light">
-            <div class="container" id="box">
-                <form class="form-inline ml-4 my-5">
-                    <input class="form-control mr-sm-2  col-md-6" id="SearchInput" type="search" placeholder="Search"
-                        onkeyup="Search()" aria-label="Search" name="keyword">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    <div id="SearchResult" class="list-group-items list-group-item-action bg-light mt-2 col-md-6 ml-5">
+        <body class="">
 
-                    </div>
-                </form>
-            </div>
-            <div class="container col-lg-12 mt-5">
-                <div class="card mb-3 ">
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                  <img src="/images/logo.png" class="col-md-2" alt="">
+                </a>
+              </nav>
+
+            <div class="container col-lg-10 mt-5">
+                <div class="card mb-3">
+                    <div class="container p-3 bg-white rounded">
                     <!-- jsp code for sellinghouse -->
                     <% List<Selling> sellingList = (List<Selling>) request.getAttribute("SellviewPage");
                             if (sellingList != null && !sellingList.isEmpty()) {
@@ -94,8 +49,8 @@
                             %>
                             <img class="card-img-top img-fluid" src="data:image/*;base64,<%= sel.getImgBase64() %>"
                                 alt="House Image">
-                </div>
-                <div class="container p-3 bg-white rounded">
+               
+                
                     <h1 class="text-dark">Details of House</h1>
 
                     <div class="form-row">
@@ -132,10 +87,14 @@
                         <input type="text" required class="form-control" readonly id="inputArea" name="Area"
                             value="<%= sel.getArea() %>" placeholder="Area of house">
                     </div>
+                    <td><a href="/chat/<%= sel.getId() %>" class="text-warning font-weight-bold">Drop a message to
+                            owner</a></td>
+
 
                     <hr class="my-4">
 
                     <% } } %>
+                </div>
                 </div>
             </div>
 

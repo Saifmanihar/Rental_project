@@ -34,18 +34,7 @@
         <li class="nav-item">
           <a class="nav-link text-dark" href="RentviewPage">House-for-Rent</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item text-dark" href="#">Action</a>
-            <a class="dropdown-item text-dark" href="#">Another action</a>
-            <div class="dropdown-divider text-dark"></div>
-            <a class="dropdown-item text-dark" href="#">Something else here</a>
-          </div>
-        </li>
+       
         <li class="nav-item">
           <a class="nav-link  text-info" href="logout">Logout</a>
         </li>
@@ -99,9 +88,8 @@
         <img class="mr-3" style="width: 10rem;" src="images/img2.jpeg" alt="Generic placeholder image">
         <div class="media-body">
           <h5 class="mt-0">Media heading</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
-          purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-          vulputate fringilla. Donec lacinia congue felis in faucibus.
+          Welcome to your new home! This stunning 2-bedroom apartment is the perfect blend of comfort and style. 
+          Located in a peaceful neighborhood, it offers a tranquil retreat while being conveniently close to all amenities.
         </div>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
@@ -109,9 +97,8 @@
         <img class="mr-3" style="width: 10rem;" src="images/white-house.jpg" alt="Generic placeholder image">
         <div class="media-body">
           <h5 class="mt-0">Media heading</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
-          purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-          vulputate fringilla. Donec lacinia congue felis in faucibus.
+          This property is ideal for those seeking a contemporary living experience. Don't miss the chance to make 
+      this apartment your home sweet home. Contact us today to schedule a viewing!
         </div>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
@@ -119,9 +106,8 @@
         <img class="mr-3" style="width: 10rem;" src="images/img1.jpg" alt="Generic placeholder image">
         <div class="media-body">
           <h5 class="mt-0">Media heading</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
-          purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-          vulputate fringilla. Donec lacinia congue felis in faucibus.
+          Immerse yourself in comfort and tranquility. This cozy 1-bedroom apartment is a haven of peace, featuring a well-appointed living space. 
+      Enjoy the convenience of a modern kitchen and the serenity of a private balcony. Your perfect home awaits.
         </div>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
@@ -130,11 +116,8 @@
       <div class="card mb-3 mt-5">
         <img class="card-img-top" src="images/white-house.jpg" alt="Card image cap">
         <div class="card-body">
-          <h1 class="card-title">It doesn't hurt to keep practicing</h1>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dignissimos voluptas at neque quasi maiores tempore eos in veritatis fugiat
-            aliquid?</p>
+          <h1 class="card-title">Unlock Your Potential with Consistent Practice</h1>
+          <p class="card-text">Embrace the journey of improvement. This spacious card provides a natural lead-in to more details.Dive into a longer description that includes the benefits of continuous practice. Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
@@ -148,11 +131,8 @@
       <div class="card mb-3  mt-5">
         <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
         <div class="card-body">
-          <h1 class="card-title">It doesn't hurt to keep practicing</h1>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dignissimos voluptas at neque quasi maiores tempore eos in veritatis fugiat
-            aliquid11?</p>
+          <h1 class="card-title">Unlock Your Potential with Consistent Practice</h1>
+          <p class="card-text">Embrace the journey of improvement. This spacious card provides a natural lead-in to more details.Dive into a longer description that includes the benefits of continuous practice. Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
@@ -161,30 +141,25 @@
       <div class="media  mt-5">
         <img class="mr-3" style="width: 10rem;" src="images/white-house.jpg" alt="Generic placeholder image">
         <div class="media-body">
-          <h5 class="mt-0">Media heading</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
-          purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-          vulputate fringilla. Donec lacinia congue felis in faucibus.
+          <h5 class="mt-0">Discover Tranquility in Every Detail</h5>
+          Immerse yourself in comfort. This charming space offers a perfect blend of serenity and convenience. 
+      From a well-designed living area to a peaceful balcony, experience a home that complements your lifestyle. Lorem ipsum dolor sit amet, consectetur adipisicing elit
         </div>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
       <div class="media  mt-5">
         <img class="mr-3" style="width: 10rem;" src="images/img2.jpeg" alt="Generic placeholder image">
         <div class="media-body">
-          <h5 class="mt-0">Media heading</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
-          purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-          vulputate fringilla. Donec lacinia congue felis in faucibus.1
+          <h5 class="mt-0">Discover the Essence of Tranquility</h5>
+          Indulge in luxury and tranquility. This modern abode offers a sophisticated living space with exquisite details.From the sleek design to the scenic views, every element is crafted for your comfort. Discover a home that reflects your style. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </div>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
       <div class="media  mt-5">
         <img class="mr-3" style="width: 10rem;" src="images/white-house.jpg" alt="Generic placeholder image">
         <div class="media-body">
-          <h5 class="mt-0">Media heading</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
-          purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-          vulputate fringilla. Donec lacinia congue felis in faucibus.
+          <h5 class="mt-0">Unwind in Comfort and Style</h5>
+          Escape to a haven of tranquility. This chic space offers a perfect retreat with modern amenities and serene surroundings.Embrace a lifestyle of relaxation and convenience. Your ideal home awaits. Lorem ipsum dolor sit amet, consectetur adipisicing elit
         </div>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
@@ -200,9 +175,8 @@
       <div class="card m-auto " style="width: 18rem;">
         <img class="card-img-top" src="images/img2.jpeg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-            card's content.</p>
+          <h5 class="card-title">Discover the Extraordinary</h5>
+    <p class="card-text">Uncover a world of possibilities.it's an invitation to a lifestyle where every detail reflects excellence and comfort.</p>
           
         </div>
       </div>
@@ -210,9 +184,8 @@
       <div class="card mr-auto" style="width: 18rem;">
         <img class="card-img-top" src="images/white-house.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-            card's content.</p>
+          <h5 class="card-title">Unveiling Possibilities</h5>
+          <p class="card-text">Explore a world of elegance and comfort. signifies an invitation to a lifestyle where every detail enriches your living experience.</p>
           
         </div>
       </div>
@@ -221,9 +194,8 @@
       <div class="card mr-auto " style="width: 18rem;">
         <img class="card-img-top" src="images/img2.jpeg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-            card's content.</p>
+          <h5 class="card-title">Explore the Extraordinary</h5>
+          <p class="card-text">Embark on a journey of luxury and comfort.invites you to a lifestyle where every detail contributes to a refined and enjoyable living experience.</p>
           
         </div>
       </div>
@@ -235,9 +207,8 @@
       <div class="card ml-auto  mb-4  mr-auto" style="width: 18rem;">
         <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-            card's content.</p>
+          <h5 class="card-title">Unveiling Possibilities</h5>
+          <p class="card-text">Explore a world of elegance and comfort. signifies an invitation to a lifestyle where every detail enriches your living experience.</p>
           
         </div>
       </div>
@@ -245,9 +216,8 @@
       <div class="card mr-auto  mb-4 " style="width: 18rem;">
         <img class="card-img-top" src="images/white-house.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-            card's content.</p>
+          <h5 class="card-title">Uncover Excitement</h5>
+    <p class="card-text">Experience more than words can convey. This space, beyond its title, opens the door to a lifestyle where every detail is designed for your delight and comfort.</p>
          
         </div>
       </div>
@@ -256,9 +226,8 @@
       <div class="card mr-auto  mb-4 " style="width: 18rem;">
         <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-            card's content.</p>
+          <h5 class="card-title">Discover the Unseen</h5>
+          <p class="card-text">Immerse yourself in possibilities. beckons you into a lifestyle where every detail weaves together to create a haven of comfort and inspiration.</p>
          
         </div>
       </div>
@@ -294,8 +263,8 @@
       <span class="sr-only">Next</span>
     </a>
     <div class="carousel-caption d-none d-md-block">
-      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, labore.</h5>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, maiores?</p>
+      <h5>Our Customer's review's</h5>
+    <p>Escape to tranquility. Unwind in a world of possibilities. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
   </div>
   <!-- /carosule end -->

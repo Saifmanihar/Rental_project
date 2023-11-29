@@ -148,45 +148,9 @@
 
     }
 
-    .breaker {
-        position: absolute;
-        margin-top: 150px;
-        width: 220px;
-        flex: none;
-    }
+  
 
-    .sp1 {
-        position: absolute;
-        left: 1125px;
-        top: 160px;
-    }
-
-    .breaker1 {
-        position: absolute;
-        margin-top: 150px;
-        left: 1155px;
-        width: 220px;
-    }
-
-    .btn-google {
-        height: 35px;
-        border-radius: 10px;
-        border: none;
-        color: blue;
-        width: 30vw;
-        position: absolute;
-        top: 100px;
-        transition: box-shadow 0.5 ease;
-        box-shadow: none;
-        cursor: pointer;
-    }
-
-    .btn-google:hover {
-        box-shadow: 0 0 10px coral;
-        background-color: blue;
-        color: aliceblue;
-
-    }
+  
 
     .redirect-page {
         position: absolute;
@@ -207,19 +171,8 @@
             </div>
             <div class="rightcolumn">
                 <p class="redirect-page">Already have an account<a href="Login">Login</a> </p>
-                <div class="sign-google">
-                    <button class="btn-google" type="submit">G Sign in with Google</button>
-                </div>
+                
                 <div class="par-field">
-                    <div class="breaker">
-                        <hr>
-                    </div>
-                    <span class="sp1"> Or </span>
-                    <div class="breaker1">
-                        <hr>
-                    </div>
-
-                 
 
                     <form action="/Save" method="post">
                         <div class="container">
@@ -236,7 +189,7 @@
                 </div>
                 <div class="par-email">
                     <label for="email" class="lb-name">E-mail</label>
-                    <input type="email" required  name="email" autocomplete="off" id="Name-input1">
+                    <input type="email" required placeholder="Email" name="email" autocomplete="off" id="Name-input1">
                 </div>
                 <div class="par-email">
                     <label for="password" class="lb-name">Password</label>
@@ -250,10 +203,7 @@
                 </div>
 
                 <div class="par-email" id="par-condition">
-                    <input type="checkbox" name="" required autocomplete="off" id="Name-input2">
-                    <label for="" class="lb-name2">Creating an account mean's you're okay with our terms of <br>
-                        <span class="sp-lb1"> Service, Privacy <span id="sp-lb2">and our default and</span> Notification
-                            Setting </label> <br>
+                   
                     <button type="submit" class="btn">Sign In </button>
                 
                     <% if (request.getAttribute("error") != null && !request.getAttribute("error").toString().isEmpty()) { %>
