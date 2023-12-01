@@ -1,11 +1,14 @@
 package com.api.web.practice.rental.model;
 
 import java.util.Base64;
+import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 @Entity
 public class Selling {
@@ -21,6 +24,21 @@ public class Selling {
 	private String Area;
 	private byte[] img;
 	
+
+	
+	public Selling(int id, String userName, String phone, String email, String price, String address, String area,
+			byte[] img) {
+		super();
+		this.id = id;
+		UserName = userName;
+		Phone = phone;
+		Email = email;
+		Price = price;
+		Address = address;
+		Area = area;
+		this.img = img;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -44,15 +62,19 @@ public class Selling {
 	public void setPhone(String phone) {
 		Phone = phone;
 	}
+
 	public String getEmail() {
 		return Email;
 	}
+
 	public void setEmail(String email) {
 		Email = email;
 	}
+
 	public String getPrice() {
 		return Price;
 	}
+
 	public void setPrice(String price) {
 		Price = price;
 	}
@@ -64,9 +86,11 @@ public class Selling {
 	public void setAddress(String address) {
 		Address = address;
 	}
+
 	public String getArea() {
 		return Area;
 	}
+
 	public void setArea(String area) {
 		Area = area;
 	}
@@ -75,26 +99,9 @@ public class Selling {
 		return img;
 	}
 
-
 	public void setImg(byte[] img) {
 		this.img = img;
 	}
-
-	public Selling(int id, String userName, String phone, String email, String price, String address, String area,
-			byte[] img) {
-		super();
-		this.id = id;
-		UserName = userName;
-		Phone = phone;
-		Email = email;
-		Price = price;
-		Address = address;
-		Area = area;
-		this.img = img;
-	}
-
-
-
 
 	public Selling() {
 		super();

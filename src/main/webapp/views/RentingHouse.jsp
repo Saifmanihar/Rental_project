@@ -33,6 +33,7 @@
               <th scope="col">Price</th>
               <th scope="col">Addres</th>
               <th scope="col">Area</th>
+              <th scope="col">Img</th>
               <th scope="col" colspan="3">Action</th>
             </tr>
           </thead>
@@ -62,6 +63,13 @@
                   </td>
                   <td>
                     <%= rent.getArea() %>
+                  </td>
+                  <td>
+                    <nav class="navbar navbar-light bg-light">
+                      <a class="navbar-brand" href="#">
+                        <img src="data:image/*;base64,<%= rent.getImgBase64() %>" class="img-fluid" alt="">
+                      </a>
+                    </nav>
                   </td>
                   <td><a href="/rent/<%= rent.getId() %>"><i class="fas fa-pen-to-square"></i></a></td>
                   <td>

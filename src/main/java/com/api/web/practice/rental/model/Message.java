@@ -4,6 +4,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class Message {
@@ -15,44 +18,33 @@ public class Message {
 	
 	
 	
-	public int getId() {
-		return id;
+	
+	public Message() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-
-
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-
-
-	public String getMessage() {
-		return message;
-	}
-
-
-
-	public void setMessage(String message) {
-		this.message = message;
-	}
-
-
-
 	public Message(int id, String message) {
 		super();
 		this.id = id;
 		this.message = message;
 	}
-
-
-
-	public Message() {
-		super();
-		// TODO Auto-generated constructor stub
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
 	}
 	
 	
+	
+
+		
 	
 	
 }

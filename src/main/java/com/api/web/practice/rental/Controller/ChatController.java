@@ -19,6 +19,7 @@ import com.api.web.practice.rental.model.Selling;
 @Controller
 public class ChatController {
 	
+	
 	@Autowired 
 	private ChatService chatservice;
 	@GetMapping("/Chatting")
@@ -37,6 +38,7 @@ public class ChatController {
 	//message controller
 	@PostMapping("/message")
 	public String Messaging(@ModelAttribute("chat") Message m) {
+		
 		 chatservice.messagesave(m);
 		 return "redirect:/SellviewPage";
 	}

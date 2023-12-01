@@ -28,7 +28,7 @@ public class LoginController {
 	        if (user != null && user.getPassword().equals(password)) {
 	            return "redirect:/home";
 	        } 
-	        else if ("Mikey@gmail.com".equals(email) && "Toman".equals(password)) {
+	        else if ("admin@gmail.com".equals(email) && "admin123".equals(password)) {
 	        	return "redirect:/SellingHouse";
 			}
 	        else {
